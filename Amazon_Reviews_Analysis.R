@@ -10,9 +10,9 @@ library(ggplot2)
 sc = sparkR.session(master='local')
 
 #Creating Spark DataFrames by reading json files from S3 bucket
-cd_vinyl_reviews <- SparkR::read.df("s3://mohitcasestudy/Cds_and_Vinyl/reviews_CDs_and_Vinyl_5.json", "json")
-kindle_reviews <- SparkR::read.df("s3://mohitcasestudy/Kindle_Store/reviews_Kindle_Store_5.json",  "json")
-movie_reviews <- SparkR::read.df("s3://mohitcasestudy/Movies_and_TV/reviews_Movies_and_TV_5.json",  "json")
+cd_vinyl_reviews <- SparkR::read.df("s3://sakshithcasestudy/Cds_and_Vinyl/reviews_CDs_and_Vinyl_5.json", "json")
+kindle_reviews <- SparkR::read.df("s3://sakshithcasestudy/Kindle_Store/reviews_Kindle_Store_5.json",  "json")
+movie_reviews <- SparkR::read.df("s3://sakshithcasestudy/Movies_and_TV/reviews_Movies_and_TV_5.json",  "json")
 
 #Creating Spark DataFrames
 cd_vinyl_reviews
